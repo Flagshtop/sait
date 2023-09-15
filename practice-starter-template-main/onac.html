@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Зимняя Чаша</title>
+
+
+	<!-- Шрифты с Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/itc-slider.css">
+	<script src="js/itc-slider.js" defer></script>
+	<style>
+	  *,
+	  *::before,
+	  *::after {
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	  }
+  
+	  body {
+		margin: 0;
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		  'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+		  'Segoe UI Symbol';
+	  }
+  
+	  .container1 {
+		max-width: 700px;
+		margin: 0 auto;
+	  }
+  
+	  .itc-slider-items {
+		counter-reset: slide;
+	  }
+  
+	  .itc-slider-item {
+		flex: 0 0 100%;
+		max-width: 100%;
+		counter-increment: slide;
+		height: 380px;
+		position: relative;
+	  }
+  
+	  .itc-slider-item::before {
+		content: counter(slide) "/3";
+		position: absolute;
+		top: 10px;
+		right: 20px;
+		color: #000000;
+		font-style: italic;
+		font-size: 32px;
+		font-weight: bold;
+		display: block;
+	  }
+  
+	  .itc-slider-item:nth-child(1) {
+		background-image: url("sl1.jpg");
+		background-size: 700px;
+	  }
+  
+	  .itc-slider-item:nth-child(2) {
+		background-image: url("sl2.jpg");
+	  }
+  
+	  .itc-slider-item:nth-child(3) {
+		background-image: url("sl3.jpg");
+		background-size: 100%;
+	  }
+  
+	</style>
+
+	<!-- Стили сайта -->
+	<link rel="stylesheet" href="css/Styles.css">
+</head>
+<body>
+	<a href="#" class="btn-up btn-up_hide"></a>
+	<header>
+		<nav class="stink">
+			<ul class="topmenu">
+			  <li><a href="index.html">Главная</a></li>
+			  <li><a href="" class="submenu-link">О наc</a>
+				<ul class="submenu">
+				  <li><a href="news.html">Новости</a></li>
+				  <li><a href="katalog.html">Каталог</a></li>
+				  <li><a href="">Сервис</a></li>
+				</ul>
+			  </li>
+			  <li><a href="">Проекты</a></li>
+			  <li><a href="#footer">Контакты</a></li>
+			</ul>
+		  </nav>
+	  </header>
+
+	<!-- СОДЕРЖИМОЕ САЙТА -->
+
+
+	
+	
+	<section class="subheader2">
+		<div class="container">
+			<div class="subheader2_txt">
+				<div class="subheader2_mintxt">
+					<p>Наша компания специализируется на продаже купелей - уникальных продуктов для тела и души. Купели являются отличным средством для расслабления и оздоровления, а также способом преобразования ванных процедур в истинное наслаждение.
+						Мы стремимся удовлетворить потребности каждого нашего клиента и предоставить им не только высококачественную продукцию, но и превосходный сервис. Наша компания работает на рынке купелей уже много лет и за это время мы зарекомендовали себя как надежный поставщик купелей высокого качества по разумной цене.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="subheader3">
+		<div class="container">
+			<div class="subheader3_txt">
+				<div class="subheader3_title">
+					<p class="subheader3_title_1">УЗНАТЬ О МАТЕРИАЛАХ</p>
+					<p class="subheader3_title_2">И СПОСОБЕ ИЗГОТОВКИ</p>
+				</div>
+				<div class="subheader3_mintxt">
+					<p>Можно на нашем ютуб канале</p>
+				</div>
+				<form action="https://youtube.com/" target="_blank">
+				<button class="subheader3_button" ><span class="subheader3_button_txt">YouTube</span></button>
+				<form>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="workers">
+		<div class="container">
+			<h1 class="workers_company">НАШ КОЛЛЕКТИВ</h1>
+			<p class="workers_txt">Наша компания - это дружный коллектив профессионалов,
+				который занимается продажей купелей высокого качества. В нашей команде работают опытные менеджеры, которые помогут подобрать оптимальную модель купели для каждого клиента.
+				У нас есть высококвалифицированные монтажники, которые установят купель быстро и качественно.
+				Также мы предлагаем гарантийное и послегарантийное обслуживание, в котором заняты наши эксперты-техники.
+				Мы ценим своих клиентов и стремимся обеспечить им максимальный комфорт и удовлетворение от использования наших продуктов. 
+				
+			</p>
+					
+		</div>
+	</section class="workers">
+
+	<h1 class="katalog">НАШ ОФИС</h1>
+
+	
+	<div class="container1">
+
+		<div class="itc-slider" data-slider="itc-slider" data-loop="false" data-autoplay="false">
+		  <div class="itc-slider-wrapper">
+			<div class="itc-slider-items">
+			  <div class="itc-slider-item">
+				<!-- Контент 1 слайда -->
+			  </div>
+			  <div class="itc-slider-item">
+				<!-- Контент 2 слайда -->
+			  </div>
+			  <div class="itc-slider-item">
+				<!-- Контент 3 слайда -->
+			  </div>
+			</div>
+		  </div>
+		  <button class="itc-slider-btn itc-slider-btn-prev"></button>
+		  <button class="itc-slider-btn itc-slider-btn-next"></button>
+		</div>
+	
+	  </div>
+
+	
+
+	  <footer id="footer">
+		<ul>
+			<li>Карта сайта</li>
+			<li><a href=index.html class="footermap">Главная</a></li>
+			<li><a href=onac.html class="footermap">О нас</a></li>
+			<li><a href=katalog.html class="footermap">Каталог</a></li>
+			<li><a href=news.html class="footermap">Новости</a></li>
+			<li>Вся информация на сайте художественная и не несет никакого юридического характера</li>
+	  </ul>
+		
+	  </footer>
+  </body>
+</body>
+</html>
