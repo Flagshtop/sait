@@ -1,0 +1,672 @@
+/**
+ * Базовые стили для всего сайта
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+* { box-sizing: border-box; }
+
+  header a {
+    text-decoration: none;
+    outline: none;
+    display: block;
+    transition: .3s ease-in-out;
+  }
+  nav {
+    display: table;
+    margin: 0 auto;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .stink{
+    position: fixed;
+    top: 10;
+    width: 100%;
+    background-color: #8fb5ff;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+.topmenu:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .topmenu > li {
+    width: 25%;
+    float: left;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .topmenu > li > a {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #404040;
+    padding: 15px 30px;
+  }
+  .topmenu li a:hover { color: #ffffff; background-color:#3275bc }
+  .submenu-link:after {
+    color: inherit;
+    margin-left: 10px;
+  }
+  .submenu {
+    background: #3275bc;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 5;
+    width: 180px;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition: .5s ease-in-out;
+  }
+  .submenu a {
+    color: white;
+    text-align: left;
+    padding: 12px 15px;
+    font-size: 13px;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+  
+  }
+  
+  .submenu li:last-child a { border-bottom: none; }
+  .topmenu > li:hover .submenu {
+    opacity: 1;
+    transform: scaleY(1);
+    background-color:#1b4775;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn-up {
+    /* фиксированное позиционирование */
+    position: fixed;
+    /* цвет фона */
+    /* расстояние от правого края окна браузера */
+    right: 20px;
+    /* расстояние от нижнего края окна браузера */
+    bottom: 0;
+    /* скругление верхнего левого угла */
+    border-top-left-radius: 8px;
+    /* скругление верхнего правого угла */
+    border-top-right-radius: 8px;
+    /* вид курсора */
+    cursor: pointer;
+    /* отображение элемента как flex */
+    display: flex;
+    /* выравниваем элементы внутри элемента по центру вдоль поперечной оси */
+    align-items: center;
+    /* выравниваем элементы внутри элемента по центру вдоль главной оси */
+    justify-content: center;
+    /* ширина элемента */
+    width: 60px;
+    /* высота элемента */
+    height: 50px;
+  }
+  
+  .btn-up::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+    background-image: url("../1687578530_bogatyr-club-p-zelenaya-strelochka-vverkh-foni-pinterest-1.png");
+  }
+  
+  
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color:#d0d5f3;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #000;
+	min-width: 320px;
+	width: auto;
+	height: auto;
+}
+
+footer{
+	margin-top: 30px;
+	list-style: none;
+	background-color:#78b9ff;  
+}
+.kfooter{
+	margin-top: 150px;
+	list-style: none;
+	background-color:#78b9ff;
+    
+}
+
+
+.subheader {
+    height: 550px;
+    background: url("../backgroundsubheader.jpg") center center/cover no-repeat;
+}
+.subheader_txt {
+    padding-left: 100px;
+    padding-top: 180px;
+    max-width: 900px;
+}
+.subheader_title_1 {
+    font-family: 'Roboto Medium', sans-serif;
+    font-size: 40px;
+    color: #ffffff;
+    line-height: 0px;
+}
+.subheader_title_2 {
+    font-family: 'Roboto Bold', sans-serif;
+    font-size: 56px;
+    color: #FFFFFF;
+    margin-top: 15px;
+}
+.subheader_mintxt {
+    font-family: 'Roboto Thin', sans-serif;
+    margin-top: 30px;
+    color: #FFFFFF;
+    font-size: 24px;
+}
+.subheader_button {
+    width: 350px;
+    height: 50px;
+    background-color:#b1eab3;
+    margin-top: 35px;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.subheader_button:hover {
+    background-color: #409242;
+    transition: 0.5s;
+}
+
+.subheader_button_txt {
+    color: #FFFFFF;
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+
+
+
+.about {
+    height: 600px;
+    background-color:  #d0d5f3;
+
+}
+.about .about_hi {
+    text-align: center;
+    font-size: 20px;
+    font-family: roboto;
+    padding-top: 75px;
+    color:#d0d5f3;
+    font-weight: 600;
+}
+.about .about_company {
+    padding-top: 10px;
+    font-size: 46px;
+    font-family: 'Roboto Bold';
+    text-align: center;
+}
+.about .about_txt {
+    font-size: 24px;
+    font-family: 'Montserrat Light', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    color: #000;
+}
+
+.about_advantages {
+    text-align: center;
+}
+
+.about_advantages li {
+    list-style: none;
+    font-family: 'Montserrat Light';
+    font-size: 24px;
+}
+
+
+
+
+
+
+.services {
+    background-color: #d0d5f3;
+    height: 900px;
+}
+.services_title_1 {
+    font-size: 40px;
+    font-family: 'Roboto Regular', sans-serif;
+    color:#000000;
+    text-align: center;
+    padding-bottom: 8px;
+}
+.services_title_2 {
+    font-size:46px;
+    font-family: 'Roboto Regular', sans-serif;
+    text-align: center;
+}
+.services_blocks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+.services_block {
+    width: 480px;
+    height: 300px;
+    margin: 12px 0px;                
+    background-color: #000;
+    border-radius: 0.3em;
+    background-size: 573px;
+    background-position: center;
+    transition: 0.5s;
+}                                                    /* center center/cover no-repeat */
+#sb1 { 
+    background-image: url("../1d.jpg");
+}
+#sb2 {
+    background-image: url("../2d.png");
+}
+#sb3 {
+    background-image: url("../3d.jpg");
+}
+#sb4 {
+    background-image: url("../4d.jpg");
+}
+
+.services_block:hover {
+    background-size: 600px;
+    transition: 0.5s;
+}
+
+.services_block_h {
+    padding-top: 15px;
+    font-family: 'Montserrat Medium', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+}
+.services_block_text {
+    text-align: center;
+    font-family: 'Montserrat Light', sans-serif;
+    font-weight: 100;
+    color: #FFFFFF;
+    padding-top: 170px;
+}
+
+
+.subheader2 {
+    height: 550px;
+    background: url("../backgroundsubheader2.jpg") center center/cover no-repeat;
+}
+.subheader2_txt {
+    padding-left: 50px;
+    padding-top: 100px;
+    max-width: 600px;
+}
+.subheader2_mintxt {
+    text-align:justify;
+    font-family: 'Roboto Thin', sans-serif;
+    margin-top: 30px;
+    margin-right: 60px;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+.subheader2_button {
+    width: 350px;
+    height: 50px;
+    background-color:#b1eab3;
+    margin-top: 35px;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.subheader2_button:hover {
+    background-color: #409242;
+    transition: 0.5s;
+}
+
+.subheader2_button_txt {
+    color: #FFFFFF;
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+
+
+.workers {
+    height: 600px;
+    background: url("../gruzchik.jpg");
+
+}
+.workers .workers_company {
+    padding-top: 45px;
+    font-size: 46px;
+    font-family: 'Montserrat Light', sans-serif;
+    text-align: center;
+}
+.workers .workers_txt {
+    font-size: 22px;
+    font-family: 'Montserrat Light', sans-serif;
+    text-align:justify;
+    padding-left: 50px;
+    padding-top: 50px;
+    max-width: 600px;
+    color: #000;
+}
+
+
+
+
+
+
+
+.katalog{
+    padding-top: 40px;
+    font-size: 46px;
+    font-family: 'Montserrat Light', sans-serif;
+    text-align: center;
+}
+
+
+.katalogs {
+    background-color: #d0d5f3;
+    height: 900px;
+}
+.katalogs_blocks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+.katalogs_block {
+    width: 450px;
+    height: 450px;
+    margin: 12px 0px;                
+    background-color: #000;
+    border-radius: 0.8em;
+    background-size: 573px;
+    background-position: center;
+    transition: 0.5s;
+}    
+.katalogs_block:hover {
+    background-size: 600px;
+    transition: 0.5s;
+}
+
+.katalogs_block_h {
+    padding-top: 15px;
+    font-family: 'Montserrat Medium', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+}
+.katalogs_block_text {
+    text-align: center;
+    font-family: 'Montserrat Light', sans-serif;
+    font-weight: 100;
+    color: #000000;
+    padding-top: 300px;
+    padding-left:30px;
+    padding-right:30px;
+}
+#kt1 { 
+    background-image: url("../kt1.jpg");
+}
+#kt2 {
+    background-image: url("../kt2.jpg");
+}
+#kt3 {
+    background-image: url("../kt3.jpg");
+}
+#kt4 {
+    background-image: url("../kt4.jpg");
+}
+.kt_button {
+    width: 250px;
+    height: 50px;
+    background-color:#b1eab3;
+    margin-left: 100px;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.kt_button:hover {
+    background-color: #409242;
+    transition: 0.5s;
+}
+
+.kt_button_txt {
+    color: #FFFFFF;
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+
+
+
+
+.SUBKT1 {
+    height: 550px;
+    background: url("../SUBKT1.jpg") center center/cover no-repeat;
+}
+.SUBKT1_txt {
+    padding-left: 50px;
+    padding-top: 50px;
+    max-width: 600px;
+}
+.SUBKT1_mintxt {
+    text-align:justify;
+    font-family: 'Roboto Thin', sans-serif;
+    margin-top: 30px;
+    margin-right: 60px;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+.SUBKT2 {
+    height: 550px;
+    background: url("../SUBKT2.jpg") center center/cover no-repeat;
+}
+
+.SUBKT3 {
+    height: 550px;
+    background: url("../SUBKT3.jpg") center center/cover no-repeat;
+}
+
+.SUBKT4 {
+    height: 550px;
+    background: url("../SUBKT4.jpg") center center/cover no-repeat;
+}
+
+
+
+
+
+table {
+    margin-left:100px ;
+    border-collapse: collapse;
+    }
+
+ul.ktproducts{
+    margin: 0; /* Обнуляем значение отступов */
+    padding: 4px; /* Значение полей */
+    text-align: center;
+    padding-bottom: 50px;
+}
+ul.ktproducts li{
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+    border: 1px solid #000; /* Рамка вокруг текста */
+    padding: 3px; /* Поля вокруг текста */
+}
+.kt1_button {
+    width: 250px;
+    height: 50px;
+    background-color:#b1eab3;
+    margin-left: 40%;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.kt1_button:hover {
+    background-color: #409242;
+    transition: 0.5s;
+}
+
+.kt1_button_txt {
+    color: #FFFFFF;
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.subheader3 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 550px;
+    background: url("../backgroundsubheader3.jpg") center center/cover no-repeat;
+}
+.subheader3_txt {
+    padding-left: 100px;
+    padding-top: 180px;
+    max-width: 900px;
+}
+.subheader3_title_1 {
+    font-family: 'Roboto Medium', sans-serif;
+    font-size: 40px;
+    color: #ffffff;
+    line-height: 0px;
+}
+.subheader3_title_2 {
+    font-family: 'Roboto Bold', sans-serif;
+    font-size: 56px;
+    color: #FFFFFF;
+    margin-top: 15px;
+}
+.subheader3_mintxt {
+    font-family: 'Roboto Thin', sans-serif;
+    margin-top: 30px;
+    color: #FFFFFF;
+    font-size: 24px;
+}
+.subheader3_button {
+    width: 350px;
+    height: 50px;
+    background-color:#ff0000;
+    margin-top: 35px;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.subheader3_button:hover {
+    background-color: #8a0202;
+    transition: 0.5s;
+}
+
+.subheader3_button_txt {
+    color: #FFFFFF;
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+}
+.subheaderinfo {
+    margin-bottom: 40px;
+    height: 550px;
+    background: url("../backgroundsubheaderinfo.jpg") center center/cover no-repeat;
+}
+.subheaderinfo_txt {
+    padding-left: 100px;
+    padding-top: 120px;
+    max-width: 900px;
+}
+
+
+
+
+
+.news {
+    background-color: #d0d5f3;
+    height: 900px;
+    
+}
+.news_blocks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+.news_block {
+    width: 1000px;
+    height: 275px;
+    margin: 12px 0px;                
+    background-color: #000;
+    border-radius: 1.5em;
+    background-color: #78b9ff;
+    background-position: center;
+    transition: 0.5s;
+}    
+
+.news_block_h {
+    padding-top: 15px;
+    font-family: 'Montserrat Medium', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+}
+.news_block_text {
+    text-align: center;
+    font-family: 'Montserrat Light', sans-serif;
+    font-weight: 100;
+    color: #000000;
+    padding-left:30px;
+    padding-right:30px;
+}
+
+.footermap{
+    font-size: 14px;
+}
+
+
+
